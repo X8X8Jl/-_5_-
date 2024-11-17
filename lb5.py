@@ -69,3 +69,7 @@ def monitor_biodiversity(species_list):
     print("Current biodiversity in the ecosystem:")
     for species in species_list:
         print(f"- {species.name}")
+def balance_ecosystem(resource_cycle):
+    resource_cycle.cycle_resources()
+    print("The ecosystem is balanced.")
+
