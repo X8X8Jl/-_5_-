@@ -79,4 +79,12 @@ introduce_species(species_list, Animal("Deer"))
 introduce_species(species_list, Microorganism("Bacteria"))
 
 climate = Climate(25, 70)
+resource_cycle = ResourceCycle(["Water", "Nutrients"])
+
+simulate_interactions(species_list)
+adjust_climate(climate, -2, 5)
+monitor_biodiversity(species_list)
+balance_ecosystem(resource_cycle)
+
+climate = Climate(25, 70)
 
