@@ -73,3 +73,10 @@ def balance_ecosystem(resource_cycle):
     resource_cycle.cycle_resources()
     print("The ecosystem is balanced.")
 
+species_list = []
+introduce_species(species_list, Plant("Oak Tree"))
+introduce_species(species_list, Animal("Deer"))
+introduce_species(species_list, Microorganism("Bacteria"))
+
+climate = Climate(25, 70)
+
