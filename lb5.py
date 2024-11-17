@@ -26,3 +26,13 @@ class Microorganism(Species):
 class Environment:
     def init(self, type):  # Замість init повинен бути init
         self.type = type
+
+class Climate:
+    def init(self, temperature, humidity):  # Замість init повинен бути init
+        self.temperature = temperature
+        self.humidity = humidity
+
+    def adjust_climate(self, temp_change, humidity_change):
+        self.temperature += temp_change
+        self.humidity += humidity_change
+        print(f"Climate adjusted: Temperature={self.temperature}, Humidity={self.humidity}")
