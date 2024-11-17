@@ -45,3 +45,10 @@ class Interaction:
 
     def simulate(self):
         self.species1.interact(self.species2)
+
+class ResourceCycle:
+    def init(self, resources):
+        self.resources = resources
+
+    def cycle_resources(self):
+        print(f"Resources are being cycled: {self.resources}")
