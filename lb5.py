@@ -52,3 +52,12 @@ class ResourceCycle:
 
     def cycle_resources(self):
         print(f"Resources are being cycled: {self.resources}")
+# Ключові методи
+def introduce_species(species_list, new_species):
+    species_list.append(new_species)
+    print(f"{new_species.name} introduced to the ecosystem.")
+
+def simulate_interactions(species_list):
+    for i in range(len(species_list)):
+        for j in range(i + 1, len(species_list)):
+            Interaction(species_list[i], species_list[j]).simulate()
