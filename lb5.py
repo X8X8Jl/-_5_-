@@ -61,3 +61,11 @@ def simulate_interactions(species_list):
     for i in range(len(species_list)):
         for j in range(i + 1, len(species_list)):
             Interaction(species_list[i], species_list[j]).simulate()
+
+def adjust_climate(climate, temp_change, humidity_change):
+    climate.adjust_climate(temp_change, humidity_change)
+
+def monitor_biodiversity(species_list):
+    print("Current biodiversity in the ecosystem:")
+    for species in species_list:
+        print(f"- {species.name}")
