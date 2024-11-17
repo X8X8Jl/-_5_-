@@ -3,3 +3,7 @@ from abc import ABC, abstractmethod
 class Species(ABC):
     def init(self, name):  # Замість init повинен бути init
         self.name = name
+
+        @abstractmethod
+        def interact(self, other):
+            pass
